@@ -1,5 +1,5 @@
 .title_bar {
-  background-color: #4abdac;
+  background-color: #F8F3E3;
 }
 
 .title_bar_name {
@@ -7,15 +7,15 @@
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: #3D2C29;
   margin: 0;
 }
 
 .buttons_title_bar .btn-outline-primary {
-    --bs-btn-color: white;
-    --bs-btn-border-color: #4abdac;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg: orange;
+    --bs-btn-color: #3D2C29;
+    --bs-btn-border-color: #F1D1B6;
+    --bs-btn-hover-color: #F5B7B1;
+    --bs-btn-hover-bg: #F5B7B1;
     --bs-btn-hover-border-color: #4abdac;
     --bs-btn-focus-shadow-rgb: 252, 74, 26;
     --bs-btn-active-color: white;
@@ -27,7 +27,17 @@
     --bs-gradient: none;
   }
 
-.about{
+  .hero{
+    display: grid;
+    height: 530px;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 450px 60px;
+  }
+
+
+
+/* .about{
     background-color: #4abdac;
     height: 450px;
     padding-top: 30px;
@@ -48,7 +58,7 @@
   font-weight: 0;
   font-style: normal;
   font-size: 4.5rem;
-}
+} */
 
 
   
