@@ -1,0 +1,56 @@
+.title_bar {
+  background-color: #4abdac;
+}
+
+.title_bar_name {
+  font-size: 48px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin: 0;
+}
+
+.buttons_title_bar .btn-outline-primary {
+    --bs-btn-color: white;
+    --bs-btn-border-color: #4abdac;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: orange;
+    --bs-btn-hover-border-color: #4abdac;
+    --bs-btn-focus-shadow-rgb: 252, 74, 26;
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: green;
+    --bs-btn-active-border-color: green;
+    --bs-btn-disabled-color: #fc4a1a;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #fc4a1a;
+    --bs-gradient: none;
+  }
+
+.about{
+    background-color: #4abdac;
+    height: 450px;
+    padding-top: 30px;
+}
+
+
+
+.about_photo img{
+    max-height: 370px; 
+    max-width: 370px;
+    object-fit: cover;
+}
+
+
+.about_name{
+ font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-style: normal;
+  font-size: 4.5rem;
+}
+
+
+  
+
+  
