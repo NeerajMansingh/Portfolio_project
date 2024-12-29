@@ -131,6 +131,33 @@
     display: flex;
     flex-direction: row;
   }
+
+  .about_section{    
+    height: auto;
+    background: linear-gradient(180deg, #C9E8C5 0%, #FFF8E1 100%);
+
+    }
+
+  #abt_sec{
+    font-size: 48px;
+    font-weight: 600;
+    color: #3D2C29;
+    padding-top:50px;
+    padding-left: 22px;
+  }
+
+  #abt_sec_para{
+    font-size: 1.2rem; /* Smaller size for the paragraph */
+    color: #3D2C29; /* Matching the color scheme */
+    margin-top: 20px; /* Spacing below the animation */
+    padding: 0 10px;
+    text-align: justify;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 92px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
   
   
 
