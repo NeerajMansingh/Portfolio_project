@@ -263,7 +263,7 @@
   .achievements_section{    
     height: auto;
     background: linear-gradient(180deg, #F6E7B9 0%, #F2D2A9 100%);
-
+    padding-bottom: 50px;
   }
 
   #achievements_heading{
