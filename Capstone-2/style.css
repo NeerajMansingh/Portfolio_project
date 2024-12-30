@@ -135,7 +135,6 @@
   .about_section{    
     height: auto;
     background: linear-gradient(180deg, #C9E8C5 0%, #FFF8E1 100%);
-
     }
 
   #abt_sec{
@@ -157,36 +156,211 @@
     padding-right: 92px;
     padding-top: 20px;
     padding-bottom: 50px;
+    margin-bottom: 0px;
+  }
+
+  .tech_stack{    
+    height: auto;
+    background: linear-gradient(180deg, #FFF8E1 0%, #F9E1D6 100%);
+    padding-bottom: 50px;
+    }
+
+
+  #tech_stack_heading{
+    font-size: 48px;
+    font-weight: 600;
+    color: #3D2C29;
+    padding-top:50px;
+    padding-left: 22px;
+    padding-bottom: 25px;
+  }
+
+  .techstackimg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure exactly 3 cards per row */
+    row-gap: 60px; /* Adjust row gap */
+    column-gap: 30px; /* Adjust column gap */
+    padding: 20px;
+    justify-items: center; /* Center-align cards in the grid */
+  }
+  
+  .card {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #FFF8E1; /* Ivory White */
+    border: 2px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Make the card width responsive to the grid */
+    max-width: 300px; /* Limit the width of each card */
+    height: 500px; /* Fixed height to maintain consistency */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .card img {
+    width: 80%; /* Ensure the image spans the card's width */
+    height: auto; /* Allow the image height to adjust dynamically */
+    max-height: 500px; /* Prevent the image from exceeding the card height */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
+    border-radius: 10px; /* Match card's border radius for a seamless look */
+  }
+  
+  .card p {
+    margin-top: 25px; /* Add some spacing above the text */
+    font-size: 1rem;
+    color: #3D2C29;
+    font-weight: 600;
   }
   
   
+  /* Hover Animation */
+  .card:hover {
+    transform: translateY(-10px); /* Move up */
+    border-color: #A5B6A0; /* Deep Sage Green */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover img {
+    transform: scale(1.1); /* Slightly enlarge the logo */
+  }
+  
+  .card:active {
+    transform: translateY(5px); /* Move down on click */
+    border-color: #B5D1C4; /* Muted Mint Green */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .projects{    
+    height: auto;
+    background: linear-gradient(180deg, #F9E1D6 0%, #F6E7B9 100%);
+
+    padding-bottom: 50px;
+    }
 
 
+  #projects_heading{
+    font-size: 48px;
+    font-weight: 600;
+    color: #3D2C29;
+    padding-top:50px;
+    padding-left: 22px;
+    padding-bottom: 25px;
+  }
 
-/* .about{
-    background-color: #4abdac;
-    height: 450px;
-    padding-top: 30px;
-}
+  .card a {
+    margin-top: 25px; /* Add some spacing above the text */
+    font-size: 1rem;
+    color: #3D2C29;
+    font-weight: 600;
+  }
+
+  .achievements_section{    
+    height: auto;
+    background: linear-gradient(180deg, #F6E7B9 0%, #F2D2A9 100%);
+
+  }
+
+  #achievements_heading{
+    font-size: 48px;
+    font-weight: 600;
+    color: #3D2C29;
+    padding-top:50px;
+    padding-left: 22px;
+    padding-bottom: 25px;
+  }
 
 
-
-.about_photo img{
-    max-height: 370px; 
-    max-width: 370px;
+  .achievement-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure exactly 3 cards per row */
+    row-gap: 60px; /* Adjust row gap */
+    column-gap: 30px; /* Adjust column gap */
+    padding: 20px;
+    justify-items: center; /* Center-align cards in the grid */
+  }
+  
+  
+  .achievement-card {
+    position: relative;
+    width: 300px; /* Fixed width */
+    height: 400px; /* Fixed height */
+    perspective: 1000px; /* Adds depth to the flip effect */
+    transition: transform 0.6s;
+  }
+  
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back when flipped */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card-front {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .card-back {
+    background-color: #FFF8E1; /* Lighter color for the back */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3D2C29; /* Charcoal Brown for text */
+    transform: rotateY(180deg); /* Initially flip the back side */
+  }
+  
+  .achievement-card:hover .card-front {
+    transform: rotateY(180deg); /* Flip the front side */
+  }
+  
+  .achievement-card:hover .card-back {
+    transform: rotateY(0deg); /* Reveal the back side */
+  }
+  
+  .achievement-card img {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-}
-
-
-.about_name{
- font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 0;
-  font-style: normal;
-  font-size: 4.5rem;
-} */
-
-
+    margin-bottom: 15px;
+  }
   
-
+  .achievement-card h3 {
+    font-size: 22px;
+    color: #3D2C29;
+  }
   
+  .achievement-card .card-back h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .achievement-card .card-back p {
+    font-size: 16px;
+    color: #6E4A3B;
+    text-align: center;
+  }
+ 
+
+
+
